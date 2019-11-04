@@ -1,0 +1,85 @@
+.signup-main-section {
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 0;
+}
+
+.signup-modal-content {
+  background-color: #90b3ffda;
+  opacity: 0.95;
+  box-shadow: 0px 0px 3px #3f2a44;
+  form {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+.signup-img {
+  margin-bottom: 0px;
+  border-radius: 5px 5px 0 0 !important;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.signup-form-group {
+  margin-bottom: 0px;
+  padding: 0px 15px;
+  input {
+    height: 42px;
+    border: 0;
+    font-size: 18px;
+    padding: 23px 0px 23px 10px;
+    border-radius: 3px !important;
+  }
+}
+.signup-btn {
+  background-color: #331cfa;
+  color: #fff;
+  font-size: 19px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border-bottom: 4px solid #1201a7;
+  width: 40%;
+  margin: 5px 0 25px;
+
+  :hover,
+  :focus {
+    background-color: #25a890 !important;
+    border-bottom: 4px solid #25a890 !important;
+  }
+}
+.signup-btn .signup-forgot {
+  padding: 0px 0 20px;
+  a {
+    color: #0000ff;
+  }
+}
+
+.signup-error-message {
+  /*padding-top: 10px;*/
+  /*padding-left: 10px;*/
+  color: #dc3545;
+  float: left;
+  padding-bottom: 10px;
+}
+.form-group br {
+  padding-bottom: 10px;
+}
+
+.grad {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(109, 52, 173),
+    rgb(32, 48, 138)
+  );
+  background-size: "cover";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

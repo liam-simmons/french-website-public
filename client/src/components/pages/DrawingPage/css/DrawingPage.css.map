@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,cAAc,EAAE,GAAG;CACpB;;AAED,AAAA,WAAW,CAAC;EAEV,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,kBAAkB,CAAC;EACjB,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "../scss/DrawingPage.scss"
+    ],
+    "names": [],
+    "file": "DrawingPage.css"
+}

@@ -1,0 +1,15 @@
+#drawing-page-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+#canvas-div {
+  //margin: auto;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+#drawing-page-info {
+  margin-top: 20px;
+}

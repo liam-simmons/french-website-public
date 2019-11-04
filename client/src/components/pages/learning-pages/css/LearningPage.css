@@ -1,0 +1,123 @@
+.english-words-div {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.english-word {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.images-div {
+  padding-top: 20px;
+}
+
+.word-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  height: auto;
+}
+
+.answer-section {
+  background-color: #eeeeee;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+.button-section table {
+  margin: 0px auto;
+}
+
+.difficulty-btn {
+  font-size: 19px;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border-bottom: 4px;
+  margin: auto 2px;
+}
+
+.difficulty-btn:hover,
+.difficulty-btn:focus {
+  color: #eee;
+}
+
+.btn-1 {
+  background-color: #b30000;
+  color: #eee;
+  border-bottom: solid #4b0000;
+}
+
+.btn-2 {
+  background-color: #333;
+  color: #eee;
+  border-bottom: solid #111;
+}
+
+.btn-3 {
+  background-color: #0c9400;
+  color: #eee;
+  border-bottom: solid #007018;
+}
+
+.btn-4 {
+  background-color: #1800ee;
+  color: #eee;
+  border-bottom: solid #000661;
+}
+
+.btn-reveal {
+  margin-top: 20px;
+  background-color: #333;
+  color: #eee;
+  border-bottom: solid #111;
+  font-size: 19px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border-bottom: -4px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.information-box {
+  margin-top: 20px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.information-header {
+  background-color: darkgreen;
+  color: white;
+}
+
+.synonym-header {
+  background-color: darkblue;
+  color: white;
+}
+
+.example-header {
+  background-color: darkorange;
+  color: white;
+}
+
+.speaker-icons {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+/*# sourceMappingURL=LearningPage.css.map */

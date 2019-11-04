@@ -1,0 +1,35 @@
+#dashboard-main {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 0px;
+}
+
+#dashboard-main h2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#dashboard-side {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 0px;
+}
+
+.dashboard-box {
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard-button {
+  margin-right: auto;
+  margin-left: auto;
+}
+/*# sourceMappingURL=Dashboard.css.map */
