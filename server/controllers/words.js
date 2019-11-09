@@ -139,5 +139,20 @@ module.exports = {
     }
 
     res.json({ words });
+  },
+  setImages: async (req, res) => {
+    const { wordId, images } = req.body;
+
+    //check if image is real first
+
+    //find the word
+    const word = await Word.findById(wordId);
+
+    console.log("word", word);
+
+    word.images = images;
+    word.save();
+
+    res.json({ success: true });
   }
 };

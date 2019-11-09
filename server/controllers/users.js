@@ -103,7 +103,7 @@ module.exports = {
     const { username, email, token } = user;
 
     res.status(200).json({ user: { username, email, token } });
-    //this sucks
+    //this isn't good
   },
   checkAuthorized: async (req, res, next) => {
     const token = signToken(req.user);
@@ -159,7 +159,7 @@ module.exports = {
 
         return {
           level,
-          favouriteImages: dueWord.favouriteImages,
+          favouriteImages: dueWord.favouriteImages || word.images,
           ...word.toObject()
         };
       }
@@ -175,14 +175,10 @@ module.exports = {
   wordResult: async (req, res, next) => {
     const { user } = req;
     const { levelChange, wordId, type } = req.body;
-    console.log("levelChange", levelChange);
-    console.log("wordId", wordId);
-    console.log("type", type);
     user.setNextReview({ levelChange, wordId, type });
 
     res.json({ done: true });
   },
-  //omg this gonna SUUUUUUUUUUUUCK
 
   getWords: async (req, res, next) => {
     //3 options for search:
@@ -202,7 +198,7 @@ module.exports = {
 
     /*    const words = user.words;
 
-    //change the number to the max we wanna send in case th ey ask for all or sth and ddos us
+    //change the number to the max we wanna send in case they ask for all
 
     const words = await Word.find({
       $or: [
@@ -214,5 +210,3 @@ module.exports = {
     res.json({ words });*/
   }
 };
-
-//assign remaining word results here for if they close early and there are locally stored negative levelbois in the ready.

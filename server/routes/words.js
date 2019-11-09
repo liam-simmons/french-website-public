@@ -59,6 +59,15 @@ router
     WordControllers.getWordsFromUser
   );
 
+router
+  .route("/set-images")
+  .post(
+    validateBody(schemas.setImagesSchema),
+    passport.authenticate("jwt", { session: false }),
+    checkAuthorizationLevel(1),
+    WordControllers.setImages
+  );
+
 module.exports = router;
 
 /*router

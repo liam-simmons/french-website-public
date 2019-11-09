@@ -67,8 +67,8 @@ module.exports = {
         .required(),
       password: Joi.string().required(),
       username: Joi.string().required()
-    }),testUserSchema: Joi.object().keys({
     }),
+    testUserSchema: Joi.object().keys({}),
     signinSchema: Joi.object().keys({
       password: Joi.string().required(),
       username: Joi.string().required()
@@ -126,6 +126,13 @@ module.exports = {
     setCategorySchema: Joi.object().keys({
       categoryName: Joi.string().required(),
       wordId: Joi.objectId().required()
+    }),
+    setImagesSchema: Joi.object().keys({
+      wordId: Joi.objectId().required(),
+      images: Joi.array()
+        .items(Joi.objectId())
+        .max(3)
+        .required()
     }),
     //wordcategories
     createCategorySchema: Joi.object().keys({

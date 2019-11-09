@@ -56,6 +56,8 @@ module.exports = {
   getImage: async (req, res) => {
     const { imageId } = req.query;
 
+    console.log("imageId", imageId);
+
     const image = await Image.findById(imageId);
 
     res.json({ image: image.image });
