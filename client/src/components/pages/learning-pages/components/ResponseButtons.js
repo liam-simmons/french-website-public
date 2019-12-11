@@ -6,7 +6,7 @@ function ResponseButtons(props) {
       <tr>
         <td>
           <button
-            className="btn difficulty-btn btn-1"
+            className="btn btn-theme btn-1 difficulty-btn"
             onClick={() => props.handleResponse(1)}
           >
             1
@@ -15,7 +15,7 @@ function ResponseButtons(props) {
         </td>
         <td>
           <button
-            className="btn difficulty-btn btn-2"
+            className="btn btn-theme btn-2 difficulty-btn"
             onClick={() => props.handleResponse(2)}
           >
             2
@@ -24,7 +24,7 @@ function ResponseButtons(props) {
         </td>
         <td>
           <button
-            className="btn difficulty-btn btn-3"
+            className="btn btn-theme btn-3 difficulty-btn"
             onClick={() => props.handleResponse(3)}
           >
             3
@@ -33,7 +33,7 @@ function ResponseButtons(props) {
         </td>
         <td>
           <button
-            className="btn difficulty-btn btn-4"
+            className="btn btn-theme btn-4 difficulty-btn"
             onClick={() => props.handleResponse(4)}
           >
             4
@@ -44,5 +44,7 @@ function ResponseButtons(props) {
     </table>
   );
 }
+
+//old button class: difficulty-btn
 
 export default ResponseButtons;

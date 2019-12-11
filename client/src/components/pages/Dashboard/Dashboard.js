@@ -9,35 +9,38 @@ class Dashboard extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-8">
-            <div className="container shadow" id="dashboard-main">
+            <div
+              className="container container-theme shadow"
+              id="dashboard-main"
+            >
               <h2>Study now</h2>
               <div className="container dashboard-box shadow-sm">
                 {/*<Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button"
                   to="/study/newwords"
                 >
                   New words
                 </Link>*/}
                 <Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button "
                   to="/study/englishtofrench"
                 >
                   English to French
                 </Link>
                 <Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button"
                   to="/study/frenchtoenglish"
                 >
                   French to English
                 </Link>
                 <Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button"
                   to="/study/typing"
                 >
                   Typing
                 </Link>
                 {/*<Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button"
                   to="/study/conjugations"
                 >
                   Conjugations
@@ -46,11 +49,11 @@ class Dashboard extends React.Component {
               <h2>Add more words</h2>
 
               <div className="container dashboard-box">
-                <Link className="btn btn-primary dashboard-button" to="/words">
+                <Link className="btn btn-theme dashboard-button" to="/words">
                   Add new words
                 </Link>
                 <Link
-                  className="btn btn-primary dashboard-button"
+                  className="btn btn-theme dashboard-button"
                   to="/addcategories"
                 >
                   Add new categories
@@ -58,7 +61,7 @@ class Dashboard extends React.Component {
               </div>
               <h2>Drawing</h2>
               <div className="container dashboard-box">
-                <Link className="btn btn-primary dashboard-button" to="/draw">
+                <Link className="btn btn-theme dashboard-button" to="/draw">
                   Draw
                 </Link>
               </div>
@@ -68,7 +71,10 @@ class Dashboard extends React.Component {
             </div>
           </div>
           <div className="col-12 col-md-4">
-            <div className="container shadow" id="dashboard-side">
+            <div
+              className="container shadow container-theme"
+              id="dashboard-side"
+            >
               Unfinished Sidebar
             </div>
           </div>

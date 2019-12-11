@@ -1,11 +1,9 @@
 $margin-top: 30px;
 $border-radius: 0px;
-$background-color: #eee;
 
 #dashboard-main {
   margin-top: $margin-top;
   width: 100%;
-  background-color: $background-color;
   border-radius: $border-radius;
 
   h2 {
@@ -17,11 +15,10 @@ $background-color: #eee;
 #dashboard-side {
   margin-top: $margin-top;
   width: 100%;
-  background-color: $background-color;
   border-radius: $border-radius;
 }
 .dashboard-box {
-  background-color: #ddd;
+  background-color: #444;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -29,6 +26,5 @@ $background-color: #eee;
 }
 
 .dashboard-button {
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 10px;
 }

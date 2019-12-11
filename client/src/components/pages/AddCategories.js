@@ -34,7 +34,7 @@ class AddCategories extends React.Component {
     const { categories } = this.state;
 
     return (
-      <div className="answer-section col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-1">
+      <div className="answer-section container container-theme">
         {categories.map((category, index) => {
           return (
             <div

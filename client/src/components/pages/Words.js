@@ -31,12 +31,12 @@ class Words extends React.Component {
     const { query, words } = this.state;
 
     return (
-      <div className="container search-page-container">
+      <div className="container container-theme search-page-container">
         <form onSubmit={this.handleSearch}>
           <div className="search-bar-outer">
             <div className="search-bar-inner">
               <input
-                class="form-control search-page-search-bar"
+                class="form-control search-page-search-bar textbox-theme"
                 placeholder="Search Words"
                 name="query"
                 type="text"

@@ -1,7 +1,6 @@
 #dashboard-main {
   margin-top: 30px;
   width: 100%;
-  background-color: #eee;
   border-radius: 0px;
 }
 
@@ -13,12 +12,11 @@
 #dashboard-side {
   margin-top: 30px;
   width: 100%;
-  background-color: #eee;
   border-radius: 0px;
 }
 
 .dashboard-box {
-  background-color: #ddd;
+  background-color: #444;
   padding-top: 10px;
   padding-bottom: 10px;
   display: -webkit-box;
@@ -29,7 +27,6 @@
 }
 
 .dashboard-button {
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=Dashboard.css.map */

@@ -4,8 +4,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .english-word {
@@ -45,8 +45,8 @@
 .difficulty-btn {
   font-size: 19px;
   padding: 7px 20px;
-  border-radius: 5px;
-  border-bottom: 4px;
+  /*border-radius: 5px;
+  border-bottom: 4px;*/
   margin: auto 2px;
 }
 
@@ -58,25 +58,25 @@
 .btn-1 {
   background-color: #b30000;
   color: #eee;
-  border-bottom: solid #4b0000;
+  /*border-bottom: solid #4b0000;*/
 }
 
 .btn-2 {
   background-color: #333;
   color: #eee;
-  border-bottom: solid #111;
+  /*border-bottom: solid #111;*/
 }
 
 .btn-3 {
   background-color: #0c9400;
   color: #eee;
-  border-bottom: solid #007018;
+  /*border-bottom: solid #007018;*/
 }
 
 .btn-4 {
   background-color: #1800ee;
   color: #eee;
-  border-bottom: solid #000661;
+  /*border-bottom: solid #000661;*/
 }
 
 .btn-reveal {
@@ -95,23 +95,26 @@
 }
 
 .information-box {
+  border: none;
   margin-top: 20px;
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
+
+  background-color: #444;
 }
 
 .information-header {
-  background-color: darkgreen;
+  background-color: #004d00;
   color: white;
 }
 
 .synonym-header {
-  background-color: darkblue;
+  background-color: #000e4d;
   color: white;
 }
 
 .example-header {
-  background-color: darkorange;
+  background-color: #4d3800;
   color: white;
 }
 

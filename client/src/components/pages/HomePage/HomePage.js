@@ -8,13 +8,17 @@ import configuration from "../../../configuration";
 class HomePage extends React.Component {
   render() {
     return (
-      <div className="container full-container">
-        <h2>Welcome to my website for learning French vocabulary.</h2>
+      <div className="container full-container container-theme shadow-sm">
+        <h2>Learn French vocabulary vite</h2>
+        <p>
+          Apply all your senses to learn new French vocabulary quickly and
+          easily with our sepcifically designed spaced repetition application!
+        </p>
         {!localStorage[configuration.JWT_TOKEN_NAME] && (
-          <div>
+          <div style={{}}>
             <button
-              className="btn btn-info btn-lg"
-              style={{ marginLeft: "2vw" }}
+              className="btn btn-theme btn-lg shadow-sm"
+              style={{ marginRight: "10px", marginTop: "5px" }}
               onClick={() => {
                 this.props
                   .createTestAccount()
@@ -25,15 +29,15 @@ class HomePage extends React.Component {
               Use a quick test account
             </button>
             <Link
-              className="btn btn-info btn-lg"
-              style={{ marginLeft: "2vw" }}
+              className="btn btn-theme btn-lg shadow-sm"
+              style={{ marginRight: "10px", marginTop: "5px" }}
               to="/login"
             >
               Login
             </Link>
             <Link
-              className="btn btn-info btn-lg"
-              style={{ marginLeft: "2vw" }}
+              className="btn btn-theme btn-lg shadow-sm"
+              style={{ marginRight: "10px", marginTop: "5px" }}
               to="/signup"
             >
               Sign up
@@ -45,7 +49,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default connect(
-  null,
-  { createTestAccount }
-)(HomePage);
+export default connect(null, { createTestAccount })(HomePage);

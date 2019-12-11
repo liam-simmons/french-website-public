@@ -10,7 +10,7 @@ import LearningPage from "./components/pages/learning-pages/LearningPage";
 import AddCategories from "./components/pages/AddCategories";
 import Categories from "./components/pages/Categories";
 import Words from "./components/pages/Words";
-import NavBar from "./components/pieces/NavBar";
+import NavBar from "./components/pieces/NavBar/NavBar";
 import DrawingPage from "./components/pages/DrawingPage/DrawingPage";
 import SignOut from "./components/pages/SignOut";
 import ProtectedRoute from "./components/routes/ProtectedRoute";
@@ -23,7 +23,8 @@ class App extends React.Component {
   }
 
   render() {
-    const backgroundStyles = {
+    {
+      /*const backgroundStyles = {
       backgroundImage:
         "linear-gradient(to bottom right,rgb(109, 52, 173),rgb(32, 48, 138))",
       backgroundSize: "cover",
@@ -33,12 +34,13 @@ class App extends React.Component {
       width: "100%",
       height: "100%",
       zIndex: -1
-    };
+    };*/
+    }
 
     return (
       <div>
         <NavBar />
-        <div style={backgroundStyles} />
+        <div />
         <Switch>
           <Route component={HomePage} exact path="/" />
           <GuestRoute component={SignUp} exact path="/signup" />
@@ -90,9 +92,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(
-  connect(
-    null,
-    { checkAuthorized }
-  )(App)
-);
+export default withRouter(connect(null, { checkAuthorized })(App));
